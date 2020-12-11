@@ -63,8 +63,30 @@ class HttpServer : public td::TcpListener::Callback {
     if (scheduler_id > 0) {
       scheduler_id--;
     }
-    td::create_actor<td::HttpInboundConnection>("HttpInboundConnection", std::move(fd), 0, 20, 500, creator_(),
-                                                scheduler_id)
+    td::create_actor<td::HttpInboundC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+onnection>HttpSer
+HttpServer.hHttpServer.hver.h, std::move(fd), 0, 20, 500, creator_(),
+                                             scheduler_id)
+
+
+
+
         .release();
   }
 
